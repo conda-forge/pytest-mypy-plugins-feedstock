@@ -1,17 +1,17 @@
 {% set name = "pytest-mypy-plugins" %}
-{% set version = "1.9.1" %}
+{% set version = "1.9.2" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 33d93785af7afec86888ff0c3bf028f8846ec806feb7f897811562800458a22a
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 26528ab66549ade53badae2ab396f426379f921bf5ddd91534c669a25b4b7e69
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
@@ -33,13 +33,13 @@ test:
     - pytest_mypy_plugins
 
 about:
-  home: "https://github.com/TypedDjango/pytest-mypy-plugins"
+  home: https://github.com/TypedDjango/pytest-mypy-plugins
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: "pytest plugin for writing tests for mypy plugins"
-  doc_url: "https://pypi.org/project/pytest-mypy-plugins/"
-  dev_url: "https://github.com/TypedDjango/pytest-mypy-plugins"
+  summary: pytest plugin for writing tests for mypy plugins
+  doc_url: https://pypi.org/project/pytest-mypy-plugins/
+  dev_url: https://github.com/TypedDjango/pytest-mypy-plugins
 
 extra:
   recipe-maintainers:
