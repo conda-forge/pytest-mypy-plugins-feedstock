@@ -1,5 +1,5 @@
 {% set name = "pytest-mypy-plugins" %}
-{% set version = "2.0.0" %}
+{% set version = "3.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 98e57cbfe87a3667ca3f3808dda86cbe9ee9d76fed5ed50d1946ea6125d09eda
+  sha256: 05a728c7cbc4f33610f97fe9266b2c3eb209e41c28935011b4fc9531662625f6
 
 build:
   number: 0
@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
   run:
     - jinja2
     - decorator
@@ -27,6 +27,7 @@ requirements:
     - pyyaml
     - regex
     - packaging
+    - tomlkit >=0.11
 
 test:
   imports:
