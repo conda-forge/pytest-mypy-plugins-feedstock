@@ -1,5 +1,5 @@
 {% set name = "pytest-mypy-plugins" %}
-{% set version = "3.1.1" %}
+{% set version = "3.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 968dbfafb7cce247571f53cfe6e4e7d947ab2f6424082a097a98d546c1669be0
+  sha256: 14fa9b00e59713a6fdb88fcf04e8139b9467e117b98d61fc12038c60afb7febe
 
 build:
   number: 0
