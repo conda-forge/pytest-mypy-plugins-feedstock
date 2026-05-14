@@ -1,5 +1,5 @@
 {% set name = "pytest-mypy-plugins" %}
-{% set version = "4.0.2" %}
+{% set version = "4.0.3" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: c96ac43a127a9aba507679eec3e92bf681ae2e31bbd6edd90074d473b7804e27
+  sha256: bfe491a363dfa7d183e1a9d19615d8aaff79262eea2bc3dca87b4f8223cfe7e8
 
 build:
   number: 0
